@@ -59,10 +59,10 @@ plt.title('ZCR')
 plt.xlabel('Frames')
 plt.ylabel('(b) ZCR')
 plt.subplot(3,2,5)
-plt.plot(F1[3,:])
-plt.title('Spectral Centroid')
+plt.plot(F1[9,:])
+plt.title('MFCC')
 plt.xlabel('(c) Frames')
-plt.ylabel('pectral Centroid')
+plt.ylabel('MFCC')
 
 # Dysarthric
 [Fs2, x2] = audioBasicIO.readAudioFile(f_wave2)
@@ -73,10 +73,10 @@ plt.title('ZCR')
 plt.xlabel('Frames')
 plt.ylabel('(b) ZCR')
 plt.subplot(3,2,6)
-plt.plot(F2[3,100:200])
-plt.title('Spectral Centroid')
+plt.plot(F2[9,:])
+plt.title('MFCC')
 plt.xlabel('(c) Frames')
-plt.ylabel('Spectral Centroid')
+plt.ylabel('MFCC')
 
 #Discriminating the features
 def disc_feature(F1,F2):
